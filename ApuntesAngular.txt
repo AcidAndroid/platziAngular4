@@ -1,0 +1,41 @@
+Angular 1: Tambien conocido como AngularJS, versión inicial del Framework.
+
+Angular 2: Revisión completa del Framework. Se desecho AngularJS y se reescribió de nuevo.
+            Esto porque AngularJS tenía errores. Literalmente era más sencillo crear un 
+            nuevo Framework que corregir el que ya se tenía.
+
+Angular 3: NO HAY ESTA VERSION; SE SALTARON LA NOMENCLATURA
+
+Angular 4: El primer update mayor de Angular 2.
+
+¿Y Angular 3?
+
+No lo pusieron porque Igor Minar líder del equipo de Angular en Google explicó que se saltó de la 
+versión 2 a la 4 porque el módulo de Angular Router (El que permite las SPA’S) tenía versión 3.3.0 
+y los demás módulos de Angular el 2.3.0. 
+Entonces eso podría o generaba errores. Por lo cual decidieron alinearlo todo con la versión 4.
+
+NOTA IMPORTANTE 2: Angular 4 cuenta con un Long Term Support (LTS) que comenzará en 
+Octubre de 2017 y terminará en Octubre de 2018.
+
+Entre las mejoras que tendrá Angular 5, están las siguientes:
+
+AOT será el default
+Chequeo de tipos en templates
+Metadata más flexible
+Se removerán los archivos .ngfactory.ts
+Mejores mensajes de error
+Mejoramiento de performance
+Entre otros
+
+
+Angular CLI, es un set de herramientas para la consola que nos facilita el trabajo con Angular 4. Facilita: 
+la creación de proyectos
+genera Componentes
+Rutas
+Servicios
+Pipes
+
+Además nos permitirá correr nuestra App de manera Local en nuestro Browser, 
+hacer Testing y 
+preparar nuestra App para producción.
