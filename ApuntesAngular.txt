@@ -1,3 +1,9 @@
+Crear un template
+
+ng new [nombre_Proyecto]
+cd [nombre_Proyecto]
+ng serve :El resultado de este comando nos dice la direccion de prueba
+
 Angular 1: Tambien conocido como AngularJS, versión inicial del Framework.
 
 Angular 2: Revisión completa del Framework. Se desecho AngularJS y se reescribió de nuevo.
@@ -62,7 +68,20 @@ Providers: servicios necesarios.
 Bootstrap: con que componente vamos a iniciar.
 
 
+Databinding
+
+Es la interaccion entre el typescript y el html
+
+Tipos de Databinding
+1.-String Interpolation: typescript--> html Variables que se representan en html
+2.-property binding: html----> typescript datos enviados desde el html al codigo
+3.-event binding:html----> typescript eventos de html enviados al html
+4.-two way databinding typescript <---> html ambas vias
 
 
+Sintaxis:
 
-
+String Interpolation: {{[nombre_varialbe]}} en el html
+property binding: <elemento_html> [propiedad_de_html]="algo_typescript" </elemento_html>
+event binding:<elemento_html> (evento_html)="algo_typescript" </elemento_html>
+two way databinding: <elemento_html> [(ngModel)]="algo_typescript" </elemento_html>
