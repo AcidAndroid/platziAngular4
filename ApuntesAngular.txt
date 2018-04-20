@@ -39,3 +39,30 @@ Pipes
 Además nos permitirá correr nuestra App de manera Local en nuestro Browser, 
 hacer Testing y 
 preparar nuestra App para producción.
+
+
+MODULOS Y COMPONENETES
+
+Módulos:
+
+Nativos: los propios de Angular 4. (se invocan segun se requieran)
+De terceros: realizados por otras personas y que nosotros podemos usar, siendo libres o pago.
+Propios: los que realicemos.
+
+Nuestros modulos se agregan en src/app/app.module.ts
+
+Componentes:
+
+Los componentes son cada html y lo que depende para que funcione
+(No se recomienda que sea mas de un componente) que tenemos
+Los componentes son lo que construye modulos
+
+Imports: módulos externos a importar.
+Providers: servicios necesarios.
+Bootstrap: con que componente vamos a iniciar.
+
+
+
+
+
+
