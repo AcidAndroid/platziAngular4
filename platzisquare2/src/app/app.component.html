@@ -22,13 +22,24 @@
 <div>
     <hr>
     <h1>
-        Aqui aun un tipo de bindign que es: {{ stringInterpolation }}!
+        Aqui aun un stringInterpolation bindign que es: {{ stringInterpolation }}!
     </h1>
 
     <button [disabled]="false">clickeame!</button>
     <button [disabled]="!listo">soy property binding!</button>
     <button [disabled]="!listo2">tambien soy property binding!</button>
     <button (click)="mehanclicado()">soy event binding!</button>
+    <hr>
+    <input type="text" placeholder="Soy 2 way databinding" id="" [(ngModel)]="nombre">
+    <h3>Tow way databinding--> Mi nombre es: {{nombre}}</h3>
 
 
+    <hr>
+    <input type="text" placeholder="Nombre" [(ngModel)]="name">
+    <br>
+    <input type="text" placeholder="Apellido paterno" [(ngModel)]="apPaterno">
+    <br>
+    <input type="text" placeholder="Apellido materno" [(ngModel)]="apMaterno">
+    <br>
+    <button (click)="enviodatos()">Enviar</button>
 </div>

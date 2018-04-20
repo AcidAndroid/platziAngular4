@@ -10,7 +10,11 @@ export class AppComponent {
   listo = false;
   listo2 = false;
   stringInterpolation ="Soy string interpolation binding";
-  // nombre:string ="Sin nombre aun";
+   nombre="";
+
+   name=""
+   apPaterno=""
+   apMaterno=""
 
   constructor(){
     setTimeout(()=>{this.listo=true;},5000);
@@ -21,4 +25,7 @@ export class AppComponent {
     alert('Me tocaste!!');
   }
 
+  enviodatos(){
+    alert(`Enviando tus datos...${this.name} ${this.apPaterno} ${this.apMaterno}`)
+  }
 }

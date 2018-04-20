@@ -76,7 +76,7 @@ Tipos de Databinding
 1.-String Interpolation: typescript--> html Variables que se representan en html
 2.-property binding: html----> typescript datos enviados desde el html al codigo
 3.-event binding:html----> typescript eventos de html enviados al html
-4.-two way databinding typescript <---> html ambas vias
+4.-two way databinding typescript <---> html ambas vias (ES NECESARIO TENER @angular/forms)
 
 
 Sintaxis:
@@ -85,3 +85,10 @@ String Interpolation: {{[nombre_varialbe]}} en el html
 property binding: <elemento_html> [propiedad_de_html]="algo_typescript" </elemento_html>
 event binding:<elemento_html> (evento_html)="algo_typescript" </elemento_html>
 two way databinding: <elemento_html> [(ngModel)]="algo_typescript" </elemento_html>
+
+Directivas en Angular
+Las directivas son una forma elegante y rápida de manipular la información, contamos con 3 tipos de directivas:
+
+COMPONENTES: Son directivas que siempre tienen asignados templates de HTML.
+ESTRUCTURALES: Nos permiten modificar el DOM, es decir manipular elementos de HTML.
+ATRIBUTOS: A estas directivas les indicamos a través de HTML cómo se deben comportar de acuerdo con ciertas condiciones que definimos.

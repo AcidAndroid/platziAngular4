@@ -1,9 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import {FormsModule} from '@angular/forms'; //Necesario para hacer 2 way binding
 
 
 @NgModule({
@@ -11,8 +10,8 @@ import {FormsModule} from '@angular/forms'; //Necesario para hacer 2 way binding
     AppComponent
   ],
   imports: [
-    BrowserModule,
-     FormsModule //Necesario para hacer 2 way binding
+    BrowserModule
+    ,FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
