@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'PlatziSquare!';
+  lat:number=19.4834951;
+  lng:number=-99.1250986;
  lugares:any =[
    {active:true , nombre:"Floreria la primavera"}
    ,{active:false , nombre:"Krispy Kreme"}
