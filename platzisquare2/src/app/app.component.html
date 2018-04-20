@@ -1,45 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-    <h1>
-        Bienvenido loco a {{ title }}!
-    </h1>
-
-
-    <img width="100" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h4>¡Un monton de links de ayuda para ti!: </h4>
-<ul>
-    <li>
-        <h5><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h5>
-    </li>
-    <li>
-        <h5><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h5>
-    </li>
-    <li>
-        <h5><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h5>
-    </li>
-</ul>
 <div>
-    <hr>
-    <h1>
-        Aqui aun un stringInterpolation bindign que es: {{ stringInterpolation }}!
-    </h1>
-
-    <button [disabled]="false">clickeame!</button>
-    <button [disabled]="!listo">soy property binding!</button>
-    <button [disabled]="!listo2">tambien soy property binding!</button>
-    <button (click)="mehanclicado()">soy event binding!</button>
-    <hr>
-    <input type="text" placeholder="Soy 2 way databinding" id="" [(ngModel)]="nombre">
-    <h3>Tow way databinding--> Mi nombre es: {{nombre}}</h3>
+    <ul>
+        <ng-container *ngFor="let lugar of lugares">
+            <li *ngIf="lugar.active">{{lugar.nombre}}</li>
+        </ng-container>
 
 
-    <hr>
-    <input type="text" placeholder="Nombre" [(ngModel)]="name">
-    <br>
-    <input type="text" placeholder="Apellido paterno" [(ngModel)]="apPaterno">
-    <br>
-    <input type="text" placeholder="Apellido materno" [(ngModel)]="apMaterno">
-    <br>
-    <button (click)="enviodatos()">Enviar</button>
+    </ul>
 </div>
